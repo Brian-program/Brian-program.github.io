@@ -1,0 +1,184 @@
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: hidden; /* Hide overflow to keep animation within the viewport */
+}
+  
+/* Header styles */
+.header {
+  overflow: hidden;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.tablinks {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.tablinks:hover {
+  background-color: #555;
+  border-radius: 20px;
+}
+
+.tablinks.active {
+  background-color: #ccc;
+  color: black;
+  border-radius: 20px;
+}
+
+/* Tab content styles */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  max-height: 80vh;
+}
+
+.tabcontent.active {
+  display: block;
+}
+
+/* Home Page Animation styles */
+.water-animation {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: blue;
+  animation: waterFlow 6s linear infinite;
+}
+
+
+@keyframes waterFlow {
+  0% {
+    left: -100%; /* Start the animation from the left */
+  }
+  100% {
+    left: 100%; /* Move the stream to the right */
+  }
+}
+
+/* Time passing animation styles */
+.time-passing {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #222;
+  overflow: hidden;
+}
+
+.time {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #444;
+  animation: timePassing 5s linear infinite;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  animation: arrowAnimation 5s linear infinite;
+}
+
+.percentage {
+  font-size: 24px;
+  margin-left: 10px;
+  transition: color 0.5s ease; /* Smooth transition for color change */
+}
+
+@keyframes arrowAnimation {
+  0%, 100% {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid green; /* Green upward arrow */
+    border-top: none; /* Remove the top border */
+    box-shadow: 0px 40px 0px 0px green; /* Green glow */
+    transform: translateY(-100%);
+  }
+  50% {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid red; /* Red downward arrow */
+    border-bottom: none; /* Remove the bottom border */
+    box-shadow: 0px -40px 0px 0px red; /* Red glow */
+    transform: translateY(100%);
+  }
+}
+
+@keyframes timePassing {
+  0% {
+    left: 0; /* Start animation from left */
+  }
+  100% {
+    left: 100%; /* Move animation to the right */
+  }
+}
+
+/* Home Page image style */
+#Home {
+  text-align: center;
+}
+
+#Home img {
+  transition: transform 0.3s ease;
+}
+
+#Home img:hover {
+  transform: scale(1.1);
+}
+
+/* Project styling */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project h4 {
+  margin-top: 0;
+}
+
+.project a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}

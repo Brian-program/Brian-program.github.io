@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Log files
+*.log
+
+# Ignore directories
+/logs/
+/temp/
+
+# Ignore Git-specific files (like a commit message file)
+COMMIT_EDITMSG

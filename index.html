@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brian's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+  <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <a href="https://www.linkedin.com/in/brian-lu-9687b1211/" target="_blank">
+    <img src="linkedin-logo.png" alt="LinkedIn" style="width:150px; height:50px; margin-bottom: 20px;">
+  </a>
+  <div class="time-passing">
+    <div class="time"></div>
+    <div>
+      <div class="arrow"></div>
+      <div class="percentage">0.00%</div>
+    </div> 
+    <div class="water-animation"></div>
+  </div>
+  <p><strong>Hi!</strong></p>
+  <p>i enjoy backend infrastructure, full-stack, apis, etc. and a faster learner when i put my mind to it</p>
+  <p>Experienced: everything, a lot, too much to fit here</p>
+  <p>Strongest Five: Python, Java, React, C# .NET, SQL</p>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project">
+      <h4>Project 1: FlixFinder</h4>
+      <p><strong>Description:</strong> FlixFinder is a web app that allows users to discover new movies and streaming services. Users can create an account, login, and browse through a movie database to search for movies based on keywords or see what their friends are watching.</p>
+      <p><strong>Skills Used:</strong> HTML, CSS, React.JS <strong>||</strong> Express.JS & Node.JS <strong>||</strong> mySQL, AWS RDS, Python Data Cleaning, Relational Databases </p>
+      <div>
+        <img src="FlixFinder.png" alt="FlixFinder Image" style="width:50%; height:50%;">
+      </div>
+      <div>
+        <a href="https://github.com/Brian-program/platformer#flixfinder" target="_blank">View on Github</a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=Xu9F1s1wrNs" target="_blank">Demo Video</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project">
+      <h4>Project 2: TabsOFF</h4>
+      <p><strong>Description:</strong> Chrome extension that organizes open tabs by time/days unused.</p>
+      <p><strong>Skills Used:</strong> HTML, CSS, TypeScript, JavaScript, Chrome caching </p>
+      <div>
+        <img src="TabsOff.png" alt="Tabs OFF Extension Image" style="width:50%; height:50%;">
+      </div>
+      <div>
+        <a href="https://github.com/chenxilll/chrome-extension/#tabsoff-chrome-extension" target="_blank">View on Github</a>
+      </div>
+      <div>
+        <a href="https://brian-program.github.io/TabsOFF-Landing-Page/" target="_blank">Landing Page</a>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project">
+      <h4>Project 3: Mock Landing Page Autodeployment</h4>
+      <p><strong>Description:</strong> Pages that autodeploy upon files updates/uploaded on github repo.</p>
+      <p><strong>Skills Used:</strong> CI/CD, Github pages, Bootstrap, yaml </p>
+      <div>
+        <img src="GithubActions.png" alt="Github Actions Image" style="width:50%; height:50%;">
+      </div>
+      <a href="https://brian-program.github.io/hugo-mock-landing-page-autodeployed/" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project">
+      <h4>Project 4: OS Final Project</h4>
+      <p><strong>Description:</strong> Developed File Allocation Table and Kernel System to manage system resources and multithreading processes.</p>
+      <p><strong>Skills Used:</strong> C, Assembly, OS, Shell, Docker </p>
+      <span style="color: #0091ff; cursor: default;">Cannot link due to Course restrictions</span>
+    </div>
+  
+    <!-- Project 5 -->
+    <div class="project">
+      <h4>Project 5: Weather Forecasting</h4>
+      <p><strong>Description:</strong> Developed an LSTM model to predict weather conditions.</p>
+      <p><strong>Skills Used:</strong> Python, Pytorch </p>
+      <span style="color: #0091ff; cursor: default;">Cannot link due to Research restrictions</span>
+    </div>
+  </div>
+</div>
+
+<!-- TODO: ADD IMAGES TO PROJECTS, ADD CLASSES TO HOME, BEGIN NEW PROJECT -->
+
+<script src="script.js"></script>
+</body>
+</html>
